@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <center><h1 style="color: red;">Forms</h1></center>
+    <form action="">
+        <fieldset>
+            <legend>Inserire dati</legend>
+            
+        </fieldset>
+
+        <br><br><hr><br>
+
+        <!-- <p>Inserire Username</p> -->
+        <label for="txtUsername">Inserire Username</label>
+        <input type="text" id="txtUsername" name="username" value="testo"> 
+        
+        <br><br><hr><br>
+
+        <input type="radio" name="linguaggio" value="Javascript"> Javascript
+        <input type="radio" name="linguaggio" value="Css"> Css
+        <input type="radio" name="linguaggio" value="Python"> Python
+        
+        <br>
+        <!-- <input type="text"> -->
+        <br><br><hr><br>
+
+        <label for="js">Html</label>
+        <input id="js" type="radio" name="linguaggio" value="html"><br>
+        <input id="js" type="radio" name="linguaggio" value="ciao">
+        <label for="js">ciao</label><br>
+        <label for="js">hey</label>
+        <input id="js" type="radio" name="linguaggio" value="hey">
+
+        <br><br><hr><br>
+
+        <label for="chkCondizioni">Accetta le condizioni di utilizzo</label>
+        <input type="checkbox" id="chkCondizioni">
+        
+        <br><br><hr><br>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password">
+        <input type="submit" value="Invia">
+        <input type="reset" value="Reset">
+
+        <br><br><hr><br>
+
+        <button type="submit">Invia</button>
+        <button type="reset">Reset</button>
+
+        <br><br><hr><br>
+        
+        <input type="button" onclick=" alert('Hello World')" value="Cliccami!">
+
+        <br><br><hr><br>
+
+        <label for="birthday">Data di nascita</label>
+        <input type="date" id="birthday" name="birthday">
+        <button type="submit">Invia</button>
+
+        <br><br><hr><br>
+
+        <label for="prenotation">Data prenotazione</label>
+        <input type="datetime-local" id="prenotation" name="prenotation">
+        <button type="submit">Invia</button>
+
+        <br><br><hr><br>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+        <button type="submit">Invia</button>
+
+        <br><br><hr><br>
+
+        <label for="myfile">Seleziona un file:</label>
+        <input type="file" id="myfile" name="myfile">
+        <button type="submit">Invia</button>
+
+        <br><br><hr><br>
+
+        <label for="qta">Quantit&aacute;</label>
+        <input  style="width: auto;" type="number" id="qta" name="qta"> 
+        <br>
+        <label for="qta">Quantit&aacute;</label>
+        <input  style="width: auto;" type="number" id="qta" name="qta" min="0" max="10"> 
+        <br>
+        <label for="qta">Quantit&aacute;</label>
+        <input  style="width: auto;" type="number" id="qta" name="qta" min="0" max="10" value="10" disabled>
+        <button type="submit">Invia</button>
+
+        <br><br><hr><br>
+
+        <label for="telefono">Telefono</label>
+        <input type="telefono" id="telefono" name="telefono"> 
+        <button type="submit">Invia</button>
+        <br>
+        <label for="telefono">Telefono</label>
+        <input type="telefono" id="telefono" name="telefono" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+        <button type="submit">Invia</button>
+
+        <br><br><hr><br>
+
+        <label for="car">Seleziona una macchina:</label>
+        <select name="modello" id="">
+            <option value="" selected>--</option>
+            <option value="bmw">BMW</option>
+            <option value="bmw">FIAT</option>
+            <option value="bmw">FERRARI</option>
+            <option value="bmw">MUSTANG</option>
+            <option value="bmw">AUDI</option>
+        </select>
+        <button type="submit">Invia</button>
+
+        <br><br><hr><br>
+
+        <label for="commento">Commento</label>
+        <br>
+        <textarea name="commento" id="commento" style="background-color: darkgrey;" cols="30" rows="10">Scrivi qui</textarea>
+
+        <br><br><hr><br>
+
+        <fieldset>
+            <p>Inserire Username</p>
+            <input type="text">
+        </fieldset>
+
+
+    </form>
+</body>
+</html>
