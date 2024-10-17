@@ -1,5 +1,5 @@
 import * as bootstrap from 'bootstrap';
-import { TodoModel } from './todo.model';
+import { TodoModel1 } from './todo.model';
 
 
 
@@ -17,11 +17,11 @@ if (btnLoadData != null){
   //     });
   // });
   //Piu leggibile
-  btnLoadData.addEventListener('click',async ()=>{
+  btnLoadData.addEventListener('click', async ()=> {
     
     console.log(' Bottono cliccato');
     const response = await fetch('https://jsonplaceholder.typicode.com/users/1/todos');
-    const valoreDiRisposta: Array<TodoModel> = await response.json();
+    const valoreDiRisposta: Array<TodoModel1> = await response.json();
     console.log(valoreDiRisposta);
 
     const tbody = document.getElementById('tbody');
